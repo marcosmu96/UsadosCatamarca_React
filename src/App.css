@@ -1,0 +1,45 @@
+.App {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+ background-color: rgb(24,24,24);
+ box-shadow: 0px 7px 20px #7f7f7f;
+}
+
+
+header a {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.logo {
+  width: 300px;
+  margin: 20px;
+}
+
+.carrito{
+  margin-right: 20px;
+  width: 40px;
+}
+
+
+.contador {
+  font-size: 15px;
+  font-weight: bold;
+  background-color: red;
+  padding: 5px 10px 5px 10px;
+  border-radius: 100px;
+  position: absolute;
+  right: 10px;
+  top: 40px;
+}
