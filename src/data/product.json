@@ -1,0 +1,92 @@
+[
+    {
+        "id": "1",
+        "car_img": "https://acroadtrip.blob.core.windows.net/catalogo-imagenes/m/RT_V_12aa5deef3794cc4ad0dfcd88426ef17.jpg",
+        "car_factory": "Oldsmobile",
+        "car_model": "88",
+        "car_year": 1993,
+        "stock": "2",
+        "Price": 100000
+    },
+    {
+        "id": "2",
+        "car_img": "https://acroadtrip.blob.core.windows.net/catalogo-imagenes/s/RT_V_331e021e61354e769067bb21f2626685.jpg",
+        "car_factory": "BMW",
+        "car_model": "Z4 M",
+        "car_year": 2008,
+        "stock": "10",
+        "Price": 210000
+    },
+    {
+        "id": "3",
+        "car_img": "https://acroadtrip.blob.core.windows.net/catalogo-imagenes/s/RT_V_05a99b23df054e0eb2c93b3885eaa13e.jpg",
+        "car_factory": "Eagle",
+        "car_model": "Summit",
+        "car_year": 1992,
+        "stock": "11",
+        "Price": 150000
+    },
+    {
+        "id": "4",
+        "car_img": "https://acroadtrip.blob.core.windows.net/catalogo-imagenes/s/RT_V_4bdd3aa753f7498094e8441b2e06dc82.webp",
+        "car_factory": "Toyota",
+        "car_model": "Sienna",
+        "car_year": 2003,
+        "stock": "3",
+        "Price": 280000
+    },
+    {
+        "id": "5",
+        "car_img": "https://acroadtrip.blob.core.windows.net/catalogo-imagenes/s/RT_V_da9f0baadd664593ad89bda3893a8861.jpg",
+        "car_factory": "Jaguar",
+        "car_model": "XJ Series",
+        "car_year": 1994,
+        "stock": "15",
+        "Price": 180000
+    },
+    {
+        "id": "6",
+        "car_img": "https://acroadtrip.blob.core.windows.net/catalogo-imagenes/s/RT_V_1f9ac7ce455d4f92872408e766d9489b.webp",
+        "car_factory": "Volvo",
+        "car_model": "XC70",
+        "car_year": 2007,
+        "stock": "8",
+        "Price": 160000
+    },
+    {
+        "id": "7",
+        "car_img": "https://acroadtrip.blob.core.windows.net/catalogo-imagenes/s/RT_V_d71cdaceff82463c893d1d117fc2802d.jpg",
+        "car_factory": "Toyota",
+        "car_model": "Land Cruiser",
+        "car_year": 2004,
+        "stock": "24",
+        "Price": 240000
+    },
+    {
+        "id": "8",
+        "car_img": "https://acroadtrip.blob.core.windows.net/catalogo-imagenes/s/RT_V_7f8b0f5318e14ddcb433b20b669ffed7.jpg",
+        "car_factory": "GMC",
+        "car_model": "Savana 3500",
+        "car_year": 2000,
+        "stock": "17",
+        "Price": 270000
+    },
+    {
+        "id": "9",
+        "car_img": "https://acroadtrip.blob.core.windows.net/catalogo-imagenes/s/RT_V_3e9e9192947d4d60a463c8d498767240.webp",
+        "car_factory": "Mercedes-Benz",
+        "car_model": "300D",
+        "car_year": 1992,
+        "stock": "3",
+        "Price": 300000
+    },
+    {
+        "id": "10",
+        "car_img": "https://acroadtrip.blob.core.windows.net/catalogo-imagenes/s/RT_V_6734dc4672df4ad294763ae507364bf9.jpg",
+        "car_factory": "Ferrari",
+        "car_model": "F430",
+        "car_year": 2006,
+        "stock": "80",
+        "Price": 90.000
+    }
+]
