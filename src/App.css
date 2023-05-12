@@ -174,7 +174,12 @@ background-color: rgb(24,24,24);
 
 
 
-
+.detalles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
 
 
