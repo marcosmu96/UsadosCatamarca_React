@@ -25,7 +25,7 @@ const uniqueCategories = new Set(categories)
 },[])
 
 
-    return (
+     return (
         <div>
             <header>
                 <img className="logo" src={Logo} alt="foto del logo"></img>
@@ -39,7 +39,7 @@ const uniqueCategories = new Set(categories)
               
                 </nav>
                 <div className="carrito2">
-                    <CartWidget contador={"0"} />
+                    <CartWidget count={"0"} />
 
                 </div>
 

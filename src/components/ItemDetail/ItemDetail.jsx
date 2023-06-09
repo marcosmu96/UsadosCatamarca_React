@@ -1,8 +1,25 @@
+import { useContext } from "react"
+import { Link } from "react-router-dom"
+import { ItemCount } from "../ItemCount/ItemCount"
+import { CartContext } from "../../context/cartContext"
 
-import React from "react";
-import ItemCounter from "../ItemCounter/ItemCounter";
+export const ItemDetail = ({ product }) => {
+	const { addItem } = useContext(CartContext)
 
-export const ItemDetail = ({ product , onAdd}) => {
+	const onAdd = quantity => addItem(product, quantity)
+
+
+
+    const { productosAgregados } = useContext(CartContext)
+
+	const totalQuantity = () =>
+		productosAgregados.reduce(
+			(acumulador, valorActual) =>
+				acumulador + valorActual.quantity,
+			0
+		)
+
+
 
 return( 
 <div className="detalles" key={product.id}>
@@ -14,8 +31,13 @@ return(
 <h2>PRECIO:{product.Price}USD</h2>
 <h3>CANTIDAD A LA VENTA:{product.stock}</h3>
 <h3>AÑO:{product.car_year}</h3>
-<ItemCounter stock = {product.stock} onAdd={onAdd}/></div>}
+<ItemCount stock = {product.stock} onAdd={onAdd}/></div>}
 
+{!!totalQuantity() && (
+			<Link to="/cart">
+				<button>Terminar mi compra</button>
+			</Link>
+		)}
 </div>
 
 )
