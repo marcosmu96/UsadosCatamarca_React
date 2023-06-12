@@ -1,7 +1,7 @@
 import { useState, useContext } from "react"
 import { getFirestore, collection, addDoc } from "firebase/firestore"
-import { CartContext } from "../context/cartContext"
-
+import { CartContext } from "../../context/cartContext"
+import './cart.css'
 export const Cart = () => {
 	const [formValues, setFormValues] = useState({
 		name: "",
@@ -40,18 +40,18 @@ export const Cart = () => {
 	const total = () =>
 		productosAgregados.reduce(
 			(acumulador, valorActual) =>
-				acumulador + valorActual.quantity * valorActual.price,
+				acumulador + valorActual.quantity * valorActual.Price,
 			0
 		)
 
 	return (
-		<div>
-			<h1>Lista productos</h1>
+		<div className="terminos">
+			<h1>LISTA DE PRODUCTOS</h1>
 			{!productosAgregados.length ? (
-				<mark>No hay productos</mark>
+				<mark>NO HAY PRODUCTOS</mark>
 			) : (
 				<>
-					<table striped bordered hover variant="dark">
+					<table>
 						<thead>
 							<tr>
 								<th>Nombre</th>
@@ -64,15 +64,15 @@ export const Cart = () => {
 						<tbody>
 							{productosAgregados.map(producto => (
 								<tr key={producto.id}>
-									<td>{producto.title}</td>
+									<td>{producto.car_model}</td>
 									<td>
 										<img
 											height={60}
-											src={producto.imageId}
-											alt={producto.title}
+											src={producto.car_img}
+											alt={producto.car_model}
 										/>
 									</td>
-									<td>{producto.price}</td>
+									<td>{producto.Price}USD</td>
 									<td>{producto.quantity}</td>
 									<td>
 										<button
@@ -96,25 +96,24 @@ export const Cart = () => {
 							</tr>
 						</tfoot>
 					</table>
-					<h2>Ingresar datos de usuario</h2>
+					<h2>INGRESAR DATOS DE USUARIO</h2>
 					<form>
-						<label for="name">Nombre</label>
+						<label for="name">Nombre:</label>
 						<input type="text" name="name" controlId="formBasicEmail" value={formValues.name} onChange={handleChange}></input>
 
-						<label for="email">Email</label>
+						<label for="email">Email:</label>
 						<input type="email" name="email" controlId="formBasicEmail" value={formValues.email} onChange={handleChange}></input>
 
-						<label for="phone">Tel</label>
+						<label for="phone">Telefono:</label>
 						<input type="text" name="phone" controlId="formBasicEmail" value={formValues.phone} onChange={handleChange}></input>
 
 					
 					
 						<button
-							variant="primary"
-							type="button"
+							className="boton23"
 							onClick={sendOrder}
 						>
-							Submit
+							Enviar
 						</button>
 					</form>
 				</>

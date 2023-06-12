@@ -5,7 +5,7 @@ import { useContext } from "react"
 import { CartContext } from "../../context/cartContext"
 import Carrito from "./assets/carro-de-la-compra.png"
 
-const CartWidget = ({ count }) => {
+const CartWidget = () => {
 
     const { productosAgregados } = useContext(CartContext)
 
@@ -19,8 +19,8 @@ const CartWidget = ({ count }) => {
     return (
 
         <>
-            <img className="carrito" src={Carrito}></img>
-            <p href="#" className="contador"> {totalQuantity}</p>
+            <img className="carrito" src={Carrito} alt="foto auto"></img>
+            <p className="contador">{totalQuantity()}</p>
         </>
 
     )

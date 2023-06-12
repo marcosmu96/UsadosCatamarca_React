@@ -35,6 +35,7 @@ export const useCart = () => {
 		setProductosAgregados(otrosProductos)
 	}
 
+
 	const clear = () => setProductosAgregados([])
 
 	return {
@@ -42,5 +43,6 @@ export const useCart = () => {
 		addItem,
 		clear,
 		deleteItem,
+		
 	}
 }
