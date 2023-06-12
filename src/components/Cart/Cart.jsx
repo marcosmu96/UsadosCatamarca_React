@@ -109,10 +109,8 @@ export const Cart = () => {
 
 					
 					
-						<button
-							className="boton23"
-							onClick={sendOrder}
-						>
+						<button variant="primary"
+							type="button" className="boton23"  onClick={sendOrder}>
 							Enviar
 						</button>
 					</form>
