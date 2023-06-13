@@ -67,7 +67,7 @@ export const Cart = () => {
 									<td>{producto.car_model}</td>
 									<td>
 										<img
-											height={60}
+											height={100}
 											src={producto.car_img}
 											alt={producto.car_model}
 										/>

@@ -36,7 +36,7 @@ export const ItemCount = ({ stock, onAdd, initial }) => {
             ) : (
                 <div>
                     <div className="">No hay stock</div>
-                    <Link to="/">
+                    <Link to={`/cart`}>
                         <button>
                             Seguir comprando
                         </button>
